@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>upload artwork</title>
+</head>
+<body>
+    <!--navebar start-->
+    <section class="upload-header">
+      <nav class="upload-navbar">
+        <div class="upload-logo">
+          <img src="image/logo.png" alt="NFTopia Logo" />
+        </div>
+        <ul class="upload-navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Explore.html">Explore</a></li>
+          <li><a href="Creator.html">Creators</a></li>
+  
+          <li class="upload-dropdown">
+            <a href="Pages.html" class="upload-dropdown-toggle" onclick="toggleDropdown(event, this)">Pages <i class="fa fa-caret-down"></i></a>
+            <ul class="upload-dropdown-menu">
+              <li class="upload-dropdown-item">
+                <a href="arts.html" class="upload-dropdown-toggle">Art <i class="fa fa-caret-right"></i></a>
+                <ul class="upload-sub-dropdown-menu">
+                  <li><a href="arts.html">Arts</a></li>
+                  <li class="upload-divider"></li>
+                  <li><a href="upload.html">Upload</a></li>
+                </ul>
+              </li>
+
+              <li class="upload-divider"></li>
+              <li><a href="FAQs.html">FAQs</a></li>
+              <li class="upload-divider"></li>
+              <li><a href="Register.html">Register</a></li>
+              <li class="upload-divider"></li>
+              <li><a href="login.html">Login</a></li>
+              <li class="upload-divider"></li>
+              <li><a href="terms.html">Terms</a></li>
+              <li class="upload-divider"></li>
+              <li><a href="error.html">Error</a></li>
+            </ul>
+          </li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          
+        </ul>
+      </nav>
+<!--text-->
+      <div class="upload-text">
+          <h1>Upload Artwork</h1>
+      </div>
+    </section>
+    <script src="EXAMPLE-script.js"></script>
+<!-------------------------------------------------------------------------------------------------------->
+<section class="upload-container">
+<div class="upload-form-container">
+  <div class="upload-form-row">
+    <div class="upload-form-group">
+      <label for="artwork-name">Artwork Name</label>
+      <input type="text" id="artwork-name" placeholder="Artwork Name">
+    </div>
+    <div class="upload-form-group">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="illustrations">Illustrations</option>
+        <option value="photography">Photography</option>
+        <option value="digital-art">Digital Art</option>
+      </select>
+    </div>
+  </div>
+  <div class="upload-form-row-1">
+    <div class="upload-price-options">
+      <div class="upload-price-option"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.25 6H7.25C7.05109 6 6.86032 6.07902 6.71967 6.21967C6.57902 6.36032 6.5 6.55109 6.5 6.75C6.5 6.94891 6.57902 7.13968 6.71967 7.28033C6.86032 7.42098 7.05109 7.5 7.25 7.5H7.75C7.94891 7.5 8.13968 7.57902 8.28033 7.71967C8.42098 7.86032 8.5 8.05109 8.5 8.25C8.5 8.44891 8.42098 8.63968 8.28033 8.78033C8.13968 8.92098 7.94891 9 7.75 9H6.5M7.5 5.25V6M7.5 9.75V9" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7.5 13C10.5376 13 13 10.5376 13 7.5C13 4.46243 10.5376 2 7.5 2C4.46243 2 2 4.46243 2 7.5C2 10.5376 4.46243 13 7.5 13Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7.5 12V14M1 7.5H3M7.5 3V1M12 7.5H14" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Fixed<p>By select this option you can set your item price fixed.</p></div>
+      <div class="upload-price-option"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 0C4.81331 0 3.65328 0.351894 2.66658 1.01118C1.67989 1.67047 0.910851 2.60754 0.456725 3.7039C0.0025997 4.80025 -0.11622 6.00665 0.115291 7.17054C0.346802 8.33443 0.918247 9.40352 1.75736 10.2426C2.59648 11.0818 3.66557 11.6532 4.82946 11.8847C5.99335 12.1162 7.19975 11.9974 8.2961 11.5433C9.39246 11.0891 10.3295 10.3201 10.9888 9.33342C11.6481 8.34672 12 7.18669 12 6C12 5.21207 11.8448 4.43185 11.5433 3.7039C11.2417 2.97594 10.7998 2.31451 10.2426 1.75736C9.68549 1.20021 9.02406 0.758251 8.2961 0.456723C7.56815 0.155195 6.78793 0 6 0ZM6 10.8C5.05065 10.8 4.12262 10.5185 3.33326 9.99105C2.54391 9.46362 1.92868 8.71396 1.56538 7.83688C1.20208 6.95979 1.10702 5.99467 1.29223 5.06357C1.47744 4.13246 1.9346 3.27718 2.60589 2.60589C3.27718 1.93459 4.13246 1.47744 5.06357 1.29223C5.99468 1.10702 6.9598 1.20208 7.83688 1.56538C8.71397 1.92868 9.46362 2.54391 9.99105 3.33326C10.5185 4.12262 10.8 5.05065 10.8 6C10.8 7.27304 10.2943 8.49394 9.39411 9.39411C8.49394 10.2943 7.27304 10.8 6 10.8Z" fill="black"/>
+        <path d="M6.00015 4.2C6.33152 4.2 6.60015 3.93137 6.60015 3.6C6.60015 3.26863 6.33152 3 6.00015 3C5.66878 3 5.40015 3.26863 5.40015 3.6C5.40015 3.93137 5.66878 4.2 6.00015 4.2Z" fill="black"/>
+        <path d="M6.00015 4.80005C5.84102 4.80005 5.6884 4.86326 5.57588 4.97578C5.46336 5.08831 5.40015 5.24092 5.40015 5.40005V8.40005C5.40015 8.55918 5.46336 8.71179 5.57588 8.82431C5.6884 8.93683 5.84102 9.00005 6.00015 9.00005C6.15928 9.00005 6.31189 8.93683 6.42441 8.82431C6.53693 8.71179 6.60015 8.55918 6.60015 8.40005V5.40005C6.60015 5.24092 6.53693 5.08831 6.42441 4.97578C6.31189 4.86326 6.15928 4.80005 6.00015 4.80005Z" fill="black"/>
+        </svg>
+        Open for Bid<p>By select this option you can set your item price fixed.</p></div>
+      <div class="upload-price-option"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00273 0C2.69599 0 0 2.69217 0 5.99836C0 9.30455 2.69654 12 6.00273 12C9.30892 12 12 9.30455 12 5.99836C12 2.69217 9.30892 0 6.00273 0ZM6.00273 1.09061C6.64747 1.08953 7.28609 1.21575 7.88195 1.46202C8.47781 1.70829 9.01919 2.06977 9.47505 2.52572C9.9309 2.98168 10.2923 3.52314 10.5384 4.11906C10.7845 4.71497 10.9106 5.35362 10.9094 5.99836C10.9107 6.64328 10.7847 7.28212 10.5386 7.87825C10.2925 8.47438 9.93123 9.01609 9.47541 9.47232C9.01958 9.92855 8.4782 10.2903 7.88228 10.5369C7.28637 10.7835 6.64765 10.9101 6.00273 10.9094C5.35753 10.9102 4.71851 10.7837 4.12226 10.5372C3.52601 10.2907 2.98424 9.92898 2.52796 9.47281C2.07169 9.01663 1.70987 8.47494 1.46323 7.87875C1.21659 7.28255 1.08997 6.64356 1.09061 5.99836C1.09061 3.28165 3.28601 1.09061 6.00273 1.09061ZM5.994 2.17359C5.92192 2.1743 5.8507 2.18928 5.78445 2.21769C5.71821 2.24609 5.65825 2.28735 5.60804 2.33908C5.55784 2.3908 5.51839 2.45196 5.49198 2.51903C5.46556 2.5861 5.4527 2.65773 5.45415 2.7298V5.99836C5.45445 6.07012 5.46891 6.14111 5.4967 6.20727C5.52449 6.27343 5.56507 6.33345 5.6161 6.38389L7.79733 8.56621C7.84778 8.61813 7.90807 8.65948 7.97468 8.68786C8.04128 8.71623 8.11287 8.73106 8.18527 8.73148C8.25766 8.73189 8.32942 8.71789 8.39634 8.69028C8.46327 8.66267 8.52403 8.62201 8.57508 8.57068C8.62612 8.51934 8.66644 8.45835 8.69367 8.39127C8.7209 8.32419 8.73449 8.25235 8.73367 8.17996C8.73284 8.10757 8.71761 8.03607 8.68886 7.96962C8.66011 7.90318 8.61841 7.84312 8.56621 7.79296L6.54585 5.77261V2.7298C6.54732 2.65672 6.53408 2.5841 6.50692 2.51624C6.47976 2.44838 6.43924 2.38667 6.38776 2.33479C6.33628 2.2829 6.27489 2.24189 6.20725 2.2142C6.13961 2.18651 6.06709 2.1727 5.994 2.17359Z" fill="black"/>
+        </svg>
+        Auction<p>By select this option you can set your item price fixed.</p></div>
+    </div>
+  </div>
+  <div class="upload-form-row">
+    <div class="upload-form-group">
+      <label for="price">Price</label>
+      <input type="number" id="price" placeholder="Price">
+    </div>
+    <div class="upload-form-group">
+      <label for="auction-time">Auction Time</label>
+      <input type="text" id="auction-time" placeholder="MM/DD/YYYY - MM/DD/YYYY">
+    </div>
+  </div>
+  <div class="upload-form-row">
+    <div class="upload-form-group">
+      <label for="currency">Currency</label>
+      <select id="currency">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="inr">INR</option>
+      </select>
+    </div>
+    <div class="upload-form-group">
+      <label for="royalty">Royalty</label>
+      <input type="number" id="royalty" placeholder="Percentage">
+    </div>
+  </div>
+  <div class="upload-form-row">
+    <div class="upload-form-group">
+      <label for="description">Description</label>
+      <textarea id="description" rows="4" placeholder="Write Description"></textarea>
+    </div>
+  </div>
+  <div class="upload-form-row-2">
+    <div class="upload-form-group-1">
+      <div class="upload-area">
+        <svg width="90" height="58" viewBox="0 0 90 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M73.5469 24.4083C73.5469 24.1667 73.5871 23.925 73.5871 23.6833C73.5871 10.5931 63.1808 0 50.3438 0C41.0826 0 33.1272 5.51806 29.3906 13.4931C27.7634 12.6674 25.9353 12.184 24.0067 12.184C18.0804 12.184 13.1384 16.5944 12.1942 22.3542C5.08259 24.8111 0 31.6382 0 39.6736C0 49.7833 8.0558 58 17.9799 58H38.5714V41.8889H28.8884L45 25.0326L61.1116 41.8688H51.4286V57.9799H73.5871C82.6674 57.9799 90 50.4278 90 41.184C90 31.9403 82.6272 24.4285 73.5469 24.4083Z" fill="#2550A6"/>
+        </svg><br>
+        Drop Your Artwork Here<br>or<br>Click to Upload <br><p>Allowed all format | Max 1 GB</p></div>
+       
+    </div>
+  </div>
+  <section class="upload-file-section">
+  <div class="upload-file">
+    <h3>Uploaded File</h3>
+    <div class="upload-file-preview">
+      <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="File Icon">
+      <span class="upload-file-name">Document.pdf</span>
+      <div class="upload-progress-bar"></div>
+      <a href="#" class="upload-remove">✖</a>
+    </div>
+    <a href="#" class="upload-reset-button">Reset All</a>
+  </div>
+</section>
+  <div class="buttons">
+    <button class="upload-btn">Upload Now</button>
+    
+  </div>
+</div>
+</section>
+ <!----------------------------------------------------------------footer-6------------------------------------------------>
+ <section class="footer-6">
+  <div class="footer-container-6">
+      <div class="footer-logo-6">
+      <img src="image/logo.png" alt="logo">
+      </div>
+  
+  <div class="footer-main-6">
+      <p>We provide one-stop solutions for all IT items; your bliss is just a click away.
+           Star Tech trusts in quality client We provide one-stop solutions for all IT items;
+            your bliss is just a click away. Star Tech trusts in quality client</p>
+  </div>
+
+    <div class="footer-section-6">
+      <h4>Marketplace</h4>
+      <ul>
+        <li><a href="#">Proper Guidelines</a></li>
+        <li><a href="#">Buy Products</a></li>
+        <li><a href="#">Compare Us</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Build Ecommerce</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section-6">
+      <h4>Marketplace</h4>
+      <ul>
+        <li><a href="#">3D Artworks</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Flat Illustration</a></li>
+        <li><a href="#">Painting</a></li>
+        <li><a href="#">Intro Videos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section-6">
+      <h4>Insight Community</h4>
+      <ul>
+        <li><a href="#">Global Partners</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Virtual World</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Brand Assets</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom-6">
+    <p>&copy; Copyrighted & Designed By <a href="#">BDevs</a></p>
+  </div>
+</div>
+</section>
+
+</section>
+
+    </body>
+    </html>

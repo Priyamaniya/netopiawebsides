@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>login</title>
+</head>
+<body>
+    <!--navebar start-->
+    <section class="login-header">
+        <nav class="login-navbar">
+            <div class="login-items">
+                <img src="image/logo.png" alt="logo" class="login-logo"/>
+            </div>
+                    
+                <ul class="login-navbar-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Explore.html">Explore</a></li>
+                    <li><a href="Creator.html">Creator</a></li>
+
+                    <li class="login-dropdown">
+                        <a href="Pages.html" class="login-dropdown-toggle" onclick="toggleDropdown(event, this)">Pages <i class="fa fa-caret-down"></i></a>
+                        <ul class="login-dropdown-menu">
+                          <li class="login-dropdown-item">
+                            <a href="arts.html" class="login-dropdown-toggle">Art <i class="fa fa-caret-right"></i></a>
+                            <ul class="login-sub-dropdown-menu">
+                              <li><a href="arts.html">Arts</a></li>
+                              <li class="login-divider"></li>
+                              <li><a href="upload.html">Upload</a></li>
+                            </ul>
+                          </li>
+                          <li class="login-divider"></li>
+                          <li><a href="FAQs.html">FAQs</a></li>
+                          <li class="login-divider"></li>
+                          <li><a href="Register.html">Register</a></li>
+                          <li class="login-divider"></li>
+                          <li><a href="login.html">Login</a></li>
+                          <li class="login-divider"></li>
+                          <li><a href="terms.html">Terms</a></li>
+                          <li class="login-divider"></li>
+                          <li><a href="error.html">Error</a></li>
+                        </ul>
+                      </li>
+
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+        </nav> 
+    
+        <!--text-->
+            <div class="login-text-1">
+            <h1>Log in</h1>
+        </div>
+    </section>
+
+    <script src="EXAMPLE-script.js"></script>
+    <section class="login-signup">
+        <div class="login-form-container">
+          <h2>Sign In Account</h2>
+          <form>
+            <div class="login-form-group">
+              <label for="login-email">Email</label>
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+      
+            <div class="login-row">
+              <div class="login-form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="username" placeholder="Your Username" required>
+              </div>
+              <div class="login-form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="password" placeholder="Your Password" required>
+              </div>
+            </div>
+      
+            <button class="login-btn-primary" type="submit">Sign In Account</button>
+            <div class="login-line">
+                <p>not yet registered? <span style="color:#1B63FF;">sign up</span></p> 
+            </div>
+           </form>
+        </div>
+      </section>
+<!----------------------------------------------------------------footer-9----------------------------------------------------------->
+<section class="footer-9">
+    <div class="footer-container-9">
+        <div class="footer-logo-9">
+        <img src="image/logo.png" alt="logo">
+        </div>
+    
+    <div class="footer-main-9">
+        <p>We provide one-stop solutions for all IT items; your bliss is just a click away.
+             Star Tech trusts in quality client We provide one-stop solutions for all IT items;
+              your bliss is just a click away. Star Tech trusts in quality client</p>
+    </div>
+  
+      <div class="footer-section-9">
+        <h4>Marketplace</h4>
+        <ul>
+          <li><a href="#">Proper Guidelines</a></li>
+          <li><a href="#">Buy Products</a></li>
+          <li><a href="#">Compare Us</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Build Ecommerce</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section-9">
+        <h4>Marketplace</h4>
+        <ul>
+          <li><a href="#">3D Artworks</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Flat Illustration</a></li>
+          <li><a href="#">Painting</a></li>
+          <li><a href="#">Intro Videos</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section-9">
+        <h4>Insight Community</h4>
+        <ul>
+          <li><a href="#">Global Partners</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Virtual World</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Brand Assets</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom-9">
+      <p>&copy; Copyrighted & Designed By <a href="#">BDevs</a></p>
+    </div>
+  </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>register</title>
+</head>
+<body>
+    <!--navebar start-->
+    <section class="register-header">
+        <nav class="register-navbar">
+            <div class="register-items">
+                <img src="image/logo.png" alt="logo" class="register-logo"/>
+            </div>
+                    
+                <ul class="register-navbar-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Explore.html">Explore</a></li>
+                    <li><a href="Creator.html">Creator</a></li>
+
+                    <li class="register-dropdown">
+                        <a href="Pages.html" class="register-dropdown-toggle" onclick="toggleDropdown(event, this)">Pages <i class="fa fa-caret-down"></i></a>
+                        <ul class="register-dropdown-menu">
+                          <li class="register-dropdown-item">
+                            <a href="arts.html" class="register-dropdown-toggle">Art <i class="fa fa-caret-right"></i></a>
+                            <ul class="register-sub-dropdown-menu">
+                              <li><a href="arts.html">Arts</a></li>
+                              <li class="register-divider"></li>
+                              <li><a href="upload.html">Upload</a></li>
+                            </ul>
+                          </li>
+                          <li class="register-divider"></li>
+                          <li><a href="FAQs.html">FAQs</a></li>
+                          <li class="register-divider"></li>
+                          <li><a href="Register.html">Register</a></li>
+                          <li class="register-divider"></li>
+                          <li><a href="login.html">Login</a></li>
+                          <li class="register-divider"></li>
+                          <li><a href="terms.html">Terms</a></li>
+                          <li class="register-divider"></li>
+                          <li><a href="error.html">Error</a></li>
+                        </ul>
+                      </li>
+
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+        </nav> 
+    
+        <!--text-->
+            <div class="register-text-1">
+            <h1>sign up</h1>
+        </div>
+    </section>
+
+    <script src="EXAMPLE-script.js"></script>
+<!--------------------------------------------------------register------------------------------------------------------------>
+<section class="register-signup-class">
+  <div class="register-form-container">
+    <h2>Create Account</h2>
+    <p>It's Easy To Create An Account And Securely Manage Your Profile.</p>
+
+    <form>
+      <div class="register-form-row">
+        <div class="register-form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" placeholder="Your First Name" required>
+        </div>
+        <div class="register-form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Your Last Name" required>
+        </div>
+      </div>
+
+      <div class="register-form-row">
+        <div class="register-form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="register-form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+      </div>
+
+      <div class="register-form-row">
+        <div class="register-form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div class="register-form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+      </div>
+
+      <button class="register-btn-primary" type="submit">Create Account</button>
+      <div class="register-line"><p>already have an account? <span style="color:#1B63FF;">sign up</p></div>
+    </form>
+
+    <div class="register-divider">Or</div>
+
+    <div class="register-social-buttons">
+      <button><svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.5583 15.5506L1.33833 6.32124C0.706572 5.8254 0.264163 5.05493 0.106368 4.17576C-0.0514261 3.29658 0.0880159 2.37902 0.494667 1.62067C0.901319 0.862314 1.54265 0.323828 2.28056 0.121167C3.01846 -0.0814934 3.79392 0.0678825 4.43993 0.537129L13.4051 7.30776L21.4546 0.620329C22.0826 0.115253 22.8529 -0.0763687 23.5989 0.0868521C24.345 0.250073 25.007 0.755036 25.442 1.49268C25.877 2.23032 26.0501 3.14143 25.9238 4.02923C25.7976 4.91703 25.3821 5.71026 24.7672 6.23759L13.5583 15.5506Z" fill="#EA4435"/>
+        <path d="M24.0741 24H20.2222V3.42857C20.2222 2.51926 20.5266 1.64719 21.0684 1.0042C21.6101 0.361221 22.3449 -1.90735e-06 23.1111 -1.90735e-06C23.8773 -1.90735e-06 24.6121 0.361221 25.1539 1.0042C25.6956 1.64719 26 2.51926 26 3.42857L26 21.7143C26 22.3205 25.7971 22.9019 25.4359 23.3305C25.0747 23.7592 24.5849 24 24.0741 24Z" fill="#00AC47"/>
+        <path d="M25.9586 2.93226C25.9502 2.86368 25.9509 2.79363 25.9388 2.72517C25.9203 2.62026 25.8859 2.52334 25.8596 2.42208C25.834 2.30619 25.8032 2.19201 25.7673 2.08003C25.748 2.02574 25.7184 1.97808 25.6965 1.92528C25.6366 1.77294 25.5673 1.62606 25.4891 1.48586C25.4506 1.41946 25.4024 1.36288 25.3599 1.30003C25.2868 1.18579 25.2079 1.07704 25.1235 0.974427C25.0594 0.900485 24.9864 0.838656 24.9168 0.772027C24.8428 0.696733 24.7657 0.625901 24.6857 0.559799C24.6093 0.500599 24.5258 0.454999 24.445 0.404484C24.3598 0.351799 24.2765 0.294427 24.1879 0.25237C24.1023 0.211456 24.011 0.185399 23.9215 0.154199C23.832 0.122999 23.7431 0.0856273 23.6512 0.0653987C23.5374 0.043701 23.4226 0.0299632 23.3074 0.0242561C23.2343 0.018199 23.1619 0.00299885 23.0885 0.00368457C22.9523 0.00839649 22.8165 0.0246281 22.6823 0.052256C22.6281 0.061856 22.5734 0.061056 22.5196 0.0743131C22.3379 0.140205 22.1567 0.208017 21.976 0.277742C21.9264 0.302885 21.883 0.340256 21.835 0.368599C21.3459 0.639408 20.9335 1.07251 20.6474 1.61556C20.3614 2.15861 20.214 2.78837 20.2231 3.42871V10.0139L24.7682 6.23751C25.2146 5.882 25.5645 5.38058 25.7758 4.79394C25.987 4.20729 26.0507 3.5608 25.9586 2.93226Z" fill="#FFBA00"/>
+        <path d="M2.88889 0C3.65507 0 4.38987 0.361224 4.93164 1.00421C5.47341 1.64719 5.77778 2.51926 5.77778 3.42857V24H1.92593C1.41514 24 0.925272 23.7592 0.564091 23.3305C0.202909 22.9019 0 22.3205 0 21.7143V3.42857C0 2.51926 0.304364 1.64719 0.846136 1.00421C1.38791 0.361224 2.12271 0 2.88889 0Z" fill="#4285F4"/>
+        <path d="M0.0428792 2.9322C0.0513533 2.86363 0.0506793 2.79357 0.0627163 2.72512C0.0812052 2.6202 0.115583 2.52329 0.141968 2.42203C0.167546 2.30617 0.198341 2.19203 0.23422 2.08009C0.253479 2.0258 0.283138 1.97814 0.305094 1.92534C0.364971 1.77294 0.434303 1.62602 0.512516 1.4858C0.551035 1.4194 0.599183 1.36283 0.641746 1.29997C0.714755 1.18573 0.793678 1.07699 0.878057 0.974373C0.942094 0.90043 1.01509 0.838601 1.08481 0.771973C1.15878 0.696649 1.23591 0.625816 1.31592 0.559744C1.39228 0.500544 1.47586 0.454944 1.55666 0.40443C1.64015 0.348382 1.72596 0.297346 1.81377 0.251516C1.89947 0.210601 1.99076 0.184544 2.08012 0.153344C2.16949 0.122144 2.25856 0.0847728 2.35043 0.0645442C2.46424 0.0428522 2.57903 0.0291145 2.69421 0.0234016C2.76739 0.0173445 2.83971 0.00214436 2.91309 0.00283007C3.04931 0.00753619 3.18508 0.0237679 3.31936 0.0514015C3.37358 0.0610015 3.42818 0.0602015 3.4821 0.0734587C3.57531 0.101646 3.66724 0.13552 3.75751 0.174944C3.84828 0.20358 3.93779 0.237604 4.02569 0.276887C4.07519 0.30203 4.11862 0.339402 4.16677 0.367745C4.29159 0.437345 4.41202 0.517553 4.52711 0.607745C4.91291 0.922132 5.22843 1.34324 5.44643 1.83471C5.66443 2.32618 5.77836 2.87325 5.77838 3.42866V10.0138L1.2332 6.23769C0.786939 5.88208 0.437036 5.38065 0.225795 4.79404C0.0145542 4.20743 -0.0489781 3.56076 0.0428792 2.9322Z" fill="#C52528"/>
+        </svg>
+        Signup With Email</button>
+      <button><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.5 0H4.5C2.01472 0 0 1.93077 0 4.3125V24.4375C0 26.8192 2.01472 28.75 4.5 28.75H25.5C27.9853 28.75 30 26.8192 30 24.4375V4.3125C30 1.93077 27.9853 0 25.5 0Z" fill="#1877F2"/>
+        <path d="M20.8359 18.5303L21.5039 14.375H17.3438V11.6797C17.3438 10.5454 17.9238 9.43359 19.7871 9.43359H21.6797V5.896C21.6797 5.896 19.9629 5.61523 18.3223 5.61523C14.8945 5.61523 12.6562 7.60303 12.6562 11.208V14.375H8.84766V18.5303H12.6562V28.75H17.3438V18.5303H20.8359Z" fill="white"/>
+        </svg>
+        Signup With Facebook</button>
+    </div>
+  </div>
+</section>
+  <!----------------------------------------------------------------footer-8----------------------------------------------->
+<section class="footer-8">
+  <div class="footer-container-8">
+      <div class="footer-logo-8">
+      <img src="image/logo.png" alt="logo">
+      </div>
+  
+  <div class="footer-main-8">
+      <p>We provide one-stop solutions for all IT items; your bliss is just a click away.
+           Star Tech trusts in quality client We provide one-stop solutions for all IT items;
+            your bliss is just a click away. Star Tech trusts in quality client</p>
+  </div>
+
+    <div class="footer-section-8">
+      <h4>Marketplace</h4>
+      <ul>
+        <li><a href="#">Proper Guidelines</a></li>
+        <li><a href="#">Buy Products</a></li>
+        <li><a href="#">Compare Us</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Build Ecommerce</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section-8">
+      <h4>Marketplace</h4>
+      <ul>
+        <li><a href="#">3D Artworks</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Flat Illustration</a></li>
+        <li><a href="#">Painting</a></li>
+        <li><a href="#">Intro Videos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section-8">
+      <h4>Insight Community</h4>
+      <ul>
+        <li><a href="#">Global Partners</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Virtual World</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Brand Assets</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom-8">
+    <p>&copy; Copyrighted & Designed By <a href="#">BDevs</a></p>
+  </div>
+</div>
+</section>
+
+
+</body>
+</html>

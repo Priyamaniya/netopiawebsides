@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Art</title>
+</head>
+<body>
+    <!--navebar start-->
+    <section class="Art-header">
+        <nav class="Art-navbar">
+          <div class="Art-logo">
+            <img src="image/logo.png" alt="NFTopia Logo" />
+          </div>
+          <ul class="Art-navbar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Explore.html">Explore</a></li>
+            <li><a href="Creator.html">Creators</a></li>
+    
+            <li class="Art-dropdown">
+              <a href="Pages.html" class="Art-dropdown-toggle" onclick="toggleDropdown(event, this)">Pages <i class="fa fa-caret-down"></i></a>
+              <ul class="Art-dropdown-menu">
+                <li class="Art-dropdown-item">
+                  <a href="arts.html" class="Art-dropdown-toggle">Art <i class="fa fa-caret-right"></i></a>
+                  <ul class="Art-sub-dropdown-menu">
+                    <li><a href="arts.html">Arts</a></li>
+                    <li class="Art-divider"></li>
+                    <li><a href="upload.html">Upload</a></li>
+                  </ul>
+                </li>
+                <li class="Art-divider"></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+                <li class="Art-divider"></li>
+                <li><a href="Register.html">Register</a></li>
+                <li class="Art-divider"></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="Art-divider"></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li class="Art-divider"></li>
+                <li><a href="error.html">Error</a></li>
+              </ul>
+            </li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            
+          </ul>
+        </nav>
+        <!--text-->
+            <div class="Art-text">
+            <h1>Arts</h1>
+        </div>
+    </section>
+    <script src="EXAMPLE-script.js"></script>
+    
+    <!-------------------------------------------------card's -------------------------------------------->
+    <section class="arts-card-2">
+        <div class="arts-artwork-2-container">
+            <div class="arts-art-2-card ">
+                <div class="arts-image-1">
+                    <span class="arts-2-featured">⭐Featured</span>
+                    <img src="image/arts-1.png" alt="Startup Concept">
+                    <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+                    <div class="arts-heart-2-icon">
+                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_1_1159)">
+                        <rect x="4" width="33" height="33" rx="4" fill="white"/>
+                        </g>
+                        <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BE1931"/>
+                        <defs>
+                        <filter id="filter0_d_1_1159" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1159"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1159" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="arts-info-2">
+                    <div class="arts-user-2">
+                        <img src="image/profile-1.png" alt="User Profile">
+                        <h4>@Johnson</h4>
+                    </div>
+                    <h3 class="arts-title-2">Startup Concept</h3>
+                    <p class="arts-current-bid-2">Current Bid</p>
+                    <p class="arts-bid-amount-2">83.46 ETH</p>
+                    <div class="arts-activity-2">
+                        <img src="image/activity.png">
+                        <span>Active</span>
+                    </div>
+                    <button class="arts-place-bid-2">Place Bid</button>
+                </div>
+            </div>
+<!--card-2--->
+<div class="arts-art-2-card ">
+<div class="arts-image-2">
+    <img src="image/arts-2.png" alt="Startup Concept">
+    <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+    <div class="arts-heart-2-icon">
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_1_15041)">
+            <rect x="4" width="33" height="33" rx="4" fill="white"/>
+            </g>
+            <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BABABA"/>
+            <defs>
+            <filter id="filter0_d_1_15041" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_15041"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_15041" result="shape"/>
+            </filter>
+            </defs>
+            </svg>
+    </div>
+</div>
+<div class="arts-info-2">
+    <div class="arts-user-2">
+        <img src="image/profile-2.png" alt="User Profile">
+        <h4>@Johnson</h4>
+    </div>
+    <h3 class="arts-title-2">ornament illustration</h3>
+    <p class="arts-current-bid-2">Current Bid</p>
+    <p class="arts-bid-amount-2">83.46 ETH</p>
+    <div class="arts-activity-2">
+        <img src="image/activity.png">
+        <span>Active</span>
+    </div>
+    <button class="arts-place-bid-2">Place Bid</button>
+</div>
+</div>
+<!--card-3-->
+<div class="arts-art-2-card ">
+    <div class="arts-image-3">
+        <img src="image/arts-3.png" alt="Startup Concept">
+        <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+        <div class="arts-heart-2-icon">
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_1_1159)">
+            <rect x="4" width="33" height="33" rx="4" fill="white"/>
+            </g>
+            <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BE1931"/>
+            <defs>
+            <filter id="filter0_d_1_1159" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1159"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1159" result="shape"/>
+            </filter>
+            </defs>
+            </svg>
+        </div>
+    </div>
+    <div class="arts-info-2">
+        <div class="arts-user-2">
+            <img src="image/profile-3.png" alt="User Profile">
+            <h4>@Johnson</h4>
+        </div>
+        <h3 class="arts-title-2">Easter santa clause</h3>
+        <p class="arts-current-bid-2">Current Bid</p>
+        <p class="arts-bid-amount-2">83.46 ETH</p>
+        <div class="arts-activity-2">
+            <img src="image/activity.png">
+            <span>Active</span>
+        </div>
+        <button class="arts-place-bid-2">Place Bid</button>
+    </div>
+</div>
+<!---card-4-->
+    <div class="arts-art-2-card ">
+        <div class="arts-image-4">
+            <span class="arts-2-featured">⭐Featured</span>
+            <img src="image/arts-4.png" alt="Startup Concept">
+            <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+            <div class="arts-heart-2-icon">
+                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_1_1159)">
+                    <rect x="4" width="33" height="33" rx="4" fill="white"/>
+                    </g>
+                    <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BE1931"/>
+                    <defs>
+                    <filter id="filter0_d_1_1159" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1159"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1159" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+                    
+            </div>
+        </div>
+        <div class="arts-info-2">
+            <div class="arts-user-2">
+                <img src="image/profile-1.png" alt="User Profile">
+                <h4>@Johnson</h4>
+            </div>
+            <h3 class="arts-title-2">Startup Concept</h3>
+            <p class="arts-current-bid-2">Current Bid</p>
+            <p class="arts-bid-amount-2">83.46 ETH</p>
+            <div class="arts-activity-2">
+                <img src="image/activity.png">
+                <span>Active</span>
+            </div>
+            <button class="arts-place-bid-2">Place Bid</button>
+        </div>
+    </div>
+<!--card-5-->
+<div class="arts-art-2-card ">
+<div class="arts-image-5">
+    <img src="image/arts-5.png" alt="Startup Concept">
+    <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+    <div class="arts-heart-2-icon">
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_1_15041)">
+            <rect x="4" width="33" height="33" rx="4" fill="white"/>
+            </g>
+            <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BABABA"/>
+            <defs>
+            <filter id="filter0_d_1_15041" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_15041"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_15041" result="shape"/>
+            </filter>
+            </defs>
+            </svg>
+            
+    </div>
+</div>
+<div class="arts-info-2">
+    <div class="arts-user-2">
+        <img src="image/profile-2.png" alt="User Profile">
+        <h4>@Johnson</h4>
+    </div>
+    <h3 class="arts-title-2">Ornament illustration</h3>
+    <p class="arts-current-bid-2">Current Bid</p>
+    <p class="arts-bid-amount-2">83.46 ETH</p>
+    <div class="arts-activity-2">
+        <img src="image/activity.png">
+        <span>Active</span>
+    </div>
+    <button class="arts-place-bid-2">Place Bid</button>
+</div>
+</div>
+<!--cad-6-->
+<div class="arts-art-2-card ">
+<div class="arts-image-6">
+    <img src="image/arts-6.png" alt="Startup Concept">
+    <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+    <div class="arts-heart-2-icon">
+    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_1_1159)">
+        <rect x="4" width="33" height="33" rx="4" fill="white"/>
+        </g>
+        <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BE1931"/>
+        <defs>
+        <filter id="filter0_d_1_1159" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1159"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1159" result="shape"/>
+        </filter>
+        </defs>
+        </svg>
+    </div>
+</div>
+<div class="arts-info-2">
+    <div class="arts-user-2">
+        <img src="image/profile-3.png" alt="User Profile">
+        <h4>@Johnson</h4>
+    </div>
+    <h3 class="arts-title-2">Easter santa clause</h3>
+    <p class="arts-current-bid-2">Current Bid</p>
+    <p class="arts-bid-amount-2">83.46 ETH</p>
+    <div class="arts-activity-2">
+        <img src="image/activity.png">
+        <span>Active</span>
+    </div>
+    <button class="arts-place-bid-2">Place Bid</button>
+</div>
+</div>
+<!--cad-7-->
+<div class="arts-art-2-card ">
+<div class="arts-image-7">
+    <span class="arts-2-featured">⭐Featured</span>
+    <img src="image/arts-7.png" alt="Startup Concept">
+    <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+    <div class="arts-heart-2-icon">
+    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_1_1159)">
+        <rect x="4" width="33" height="33" rx="4" fill="white"/>
+        </g>
+        <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BE1931"/>
+        <defs>
+        <filter id="filter0_d_1_1159" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1159"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1159" result="shape"/>
+        </filter>
+        </defs>
+        </svg>
+    </div>
+</div>
+<div class="arts-info-2">
+    <div class="arts-user-2">
+        <img src="image/profile-1.png" alt="User Profile">
+        <h4>@Johnson</h4>
+    </div>
+    <h3 class="arts-title-2">Startup Concept</h3>
+    <p class="arts-current-bid-2">Current Bid</p>
+    <p class="arts-bid-amount-2">83.46 ETH</p>
+    <div class="arts-activity-2">
+        <img src="image/activity.png">
+        <span>Active</span>
+    </div>
+    <button class="arts-place-bid-2">Place Bid</button>
+</div>
+</div>
+<!--cad-8-->
+<div class="arts-art-2-card ">
+<div class="arts-image-8">
+    <img src="image/arts-8.png" alt="Startup Concept">
+    <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+    <div class="arts-heart-2-icon">
+        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_1_15041)">
+            <rect x="4" width="33" height="33" rx="4" fill="white"/>
+            </g>
+            <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BABABA"/>
+            <defs>
+            <filter id="filter0_d_1_15041" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_15041"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_15041" result="shape"/>
+            </filter>
+            </defs>
+            </svg>
+            
+    </div>
+</div>
+<div class="arts-info-2">
+    <div class="arts-user-2">
+        <img src="image/profile-2.png" alt="User Profile">
+        <h4>@Johnson</h4>
+    </div>
+    <h3 class="arts-title-2">Ornament illustration</h3>
+    <p class="arts-current-bid-2">Current Bid</p>
+    <p class="arts-bid-amount-2">83.46 ETH</p>
+    <div class="arts-activity-2">
+        <img src="image/activity.png">
+        <span>Active</span>
+    </div>
+    <button class="arts-place-bid-2">Place Bid</button>
+</div>
+</div>
+<!--cad-9-->
+<div class="arts-art-2-card ">
+<div class="arts-image-9">
+    <img src="image/arts-9.png" alt="Startup Concept">
+    <div class="arts-timer-2">00 : 00 : 00 : 00</div>
+    <div class="arts-heart-2-icon">
+    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_1_1159)">
+        <rect x="4" width="33" height="33" rx="4" fill="white"/>
+        </g>
+        <path d="M29.962 13.231C29.962 10.342 27.62 7.99993 24.7314 7.99993C22.9778 7.99993 21.4304 8.8656 20.481 10.1888C19.5321 8.8656 17.9842 7.99993 16.2311 7.99993C13.342 7.99993 11 10.342 11 13.231C11 13.6403 11.052 14.0368 11.141 14.419C11.8678 18.9313 16.8847 23.6928 20.481 25C24.0767 23.6928 29.0947 18.9313 29.8199 14.419C29.91 14.0368 29.962 13.6403 29.962 13.231Z" fill="#BE1931"/>
+        <defs>
+        <filter id="filter0_d_1_1159" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1159"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1159" result="shape"/>
+        </filter>
+        </defs>
+        </svg>
+    </div>
+</div>
+<div class="arts-info-2">
+    <div class="arts-user-2">
+        <img src="image/profile-3.png" alt="User Profile">
+        <h4>@Johnson</h4>
+    </div>
+    <h3 class="arts-title-2">Easter santa clause</h3>
+    <p class="arts-current-bid-2">Current Bid</p>
+    <p class="arts-bid-amount-2">83.46 ETH</p>
+    <div class="arts-activity-2">
+        <img src="image/activity.png">
+        <span>Active</span>
+    </div>
+    <button class="arts-place-bid-2">Place Bid</button>
+</div>
+</div>
+</div>
+</section>
+ <!---------------------------------------button,1,2,3-------------------------------------------------->
+ <section class="arts-pagination-button">
+    <div class="arts-pagination">
+    <button class="arts-prev">&lt;</button>
+    <button class="arts-active">01</button>
+    <button>02</button>
+    <button class="arts-next">&gt;</button>
+  </div>
+  </section>
+  
+  <!---------------------------------------------------------footer-5------------------------------------------------------->
+  <section class="arts-footer-5">
+    <div class="arts-footer-container-5">
+        <div class="arts-footer-logo-5">
+        <img src="image/logo.png" alt="logo">
+        </div>
+    
+    <div class="arts-footer-main-5">
+        <p>We provide one-stop solutions for all IT items; your bliss is just a click away.
+             Star Tech trusts in quality client We provide one-stop solutions for all IT items;
+              your bliss is just a click away. Star Tech trusts in quality client</p>
+    </div>
+  
+      <div class="arts-footer-section-5">
+        <h4>Marketplace</h4>
+        <ul>
+          <li><a href="#">Proper Guidelines</a></li>
+          <li><a href="#">Buy Products</a></li>
+          <li><a href="#">Compare Us</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Build Ecommerce</a></li>
+        </ul>
+      </div>
+  
+      <div class="arts-footer-section-5">
+        <h4>Marketplace</h4>
+        <ul>
+          <li><a href="#">3D Artworks</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Flat Illustration</a></li>
+          <li><a href="#">Painting</a></li>
+          <li><a href="#">Intro Videos</a></li>
+        </ul>
+      </div>
+  
+      <div class="arts-footer-section-5">
+        <h4>Insight Community</h4>
+        <ul>
+          <li><a href="#">Global Partners</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Virtual World</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Brand Assets</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="arts-footer-bottom-5">
+      <p>&copy; Copyrighted & Designed By <a href="#">BDevs</a></p>
+    </div>
+  </div>
+  </section>
+</body>
+</html>
