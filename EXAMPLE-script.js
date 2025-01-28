@@ -1,3 +1,7 @@
+
+
+
+
 // Function to toggle dropdown menu
 function toggleDropdown(event, link) {
   const dropdownMenu = link.nextElementSibling; // Find the dropdown menu

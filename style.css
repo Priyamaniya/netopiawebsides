@@ -240,15 +240,15 @@
 }
 .character-container {
     position: absolute;
-    margin-bottom: 120%;
-    right: 15%; 
+    right: 120px;
     z-index: 1; 
-    top: 7%;
+    top: 10%;
   }
   .character {
     width: 435px; 
     height: auto; 
     border-radius: 5px;
+    margin-top: 10%;
   }
   .character-container {
     display: flex;
